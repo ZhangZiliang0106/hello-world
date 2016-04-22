@@ -4,10 +4,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Hello World");
-		System.out.println("你好 世界");
+		int foot;
+		double inch;
 		Scanner in = new Scanner(System.in);
-		System.out.println("echo:" + in.nextLine());
+		foot = in.nextInt();
+		inch = in.nextInt();
+		System.out.println("foot=" + foot + ",inch=" + inch);
+		System.out.println((int) ((foot + inch / 12) * 0.3048 * 100) + "cm");
 		in.close();
 		
 	}
